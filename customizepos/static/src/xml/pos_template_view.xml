@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="mytemplate" xml:space="preserve">
+ 		<t t-extend="PaymentScreenWidget">
+                <t t-jquery="div.pos-payment-container" t-operation="after">
+                    <div>
+                       Payment Screen Modified 2
+                    </div>  
+                </t>
+            </t>
+        <t t-extend="NumpadWidget">
+           	<t t-jquery="div.numpad" t-operation="after">
+           	<br/>
+           	   <input type="text" class="gogo"/>
+           	              	   <div>
+                       Payment Screen Modified 2
+                </div>
+            </t>
+        </t>
+ 
+</templates>

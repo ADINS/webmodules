@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="mytemplate" xml:space="preserve">
+ 		<t t-extend="PaymentScreenWidget">
+                <t t-jquery="div.pos-payment-container" t-operation="after">
+                    <div>
+                       Payment Screen Modified
+                    </div>  
+                </t>
+            </t>
+        <t t-extend="NumpadWidget">
+           	<t t-jquery="button[datamode|=discount]" t-operation="after">
+           	   <button class="input-button number-char">7</button>
+            </t>
+        </t>
+ 
+</templates>
